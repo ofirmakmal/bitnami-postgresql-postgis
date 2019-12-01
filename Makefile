@@ -16,7 +16,7 @@ TEMPFILE := $(shell mktemp)
 
 build: Dockerfile
 	docker build -t ${TAG} .
-	-rm Dockerfile
+	# -rm Dockerfile
 
 Dockerfile: FORCE
 	sed -e "s/\$${PGVERSION}/${PGVERSION}/; s/\$${POSTGIS_VERSION}/${POSTGIS_VERSION}/" Dockerfile.template > Dockerfile
