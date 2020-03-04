@@ -1,4 +1,4 @@
-FROM bitnami/postgresql:10.6.0
+FROM bitnami/postgresql:10.7.0
 LABEL maintainer "Alexander Awitin Jr <me@alexanderawitin.com>"
 
 USER 0
