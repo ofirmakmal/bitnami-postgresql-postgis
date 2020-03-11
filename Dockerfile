@@ -16,7 +16,5 @@ RUN install_packages wget build-essential libxml2-dev libgeos-dev libproj-dev li
     && make \
     && make install \
 	&& apt-get remove --purge --auto-remove -y wget build-essential
-COPY ./initdb-postgis.sh /docker-entrypoint-initdb.d/postgis.sh
-COPY ./update-postgis.sh /usr/local/bin
 
 USER 1001
